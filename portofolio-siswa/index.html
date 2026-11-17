@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Ilham Rizki</title>
+    <link rel="stylesheet" href="sytle.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a href="#home" class="logo">Riki</a>
+        <nav id="site-nav" class="site-nav" aria-label="navigasi-utama">
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang</a>
+            <a href="#projects">Proyek</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+        <div class="header-actions">
+  <button type="button" id="theme-toggle" aria-label="Ganti mode gelap atau terang">Mode gelap</button>
+  <button type="button" id="nav-toggle" aria-label="Buka menu" aria-controls="site-nav" aria-expanded="false">☰</button>
+</div>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <p class="eyebrow">XII-RPL . Portofolio</p>
+            <h1>ILHAM RIZKI</h1>
+            <p class="tagline">Siswa RPL yang belajar membuat website bersih, responsif, dan siap dipresentasikan</p>
+            <a href="#projects" class="btn">Lihat Proyek</a>
+        </section>
+        <section id="about" class="section">
+      <h2>Tentang saya</h2>
+      <p>Saat ini saya terus belajar mengembangkan
+        kemampuan dalam membuat website, memahami
+        logika pemrograman, dan mengelola database.</p>
+      <h3>Keahlian</h3>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript dasar</li>
+        <li>Python dasar</li>
+        <li>Database</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Proyek</h2>
+      <div class="project-grid">
+        <article class="card">
+          <h3>Website Sekolah</h3>
+          <p>Halaman informasi sekolah dengan navigasi sederhana dan layout responsif.</p>
+          <a href="https://www.smknegeri2peusangan.sch.id/">Lihat detail</a>
+        </article>
+        <article class="card">
+          <h3>Website Inventaris RPL</h3>
+          <p>mencatat semua unit di lab rpl.</p>
+          <a href="https://inventarisrpl.my.canva.site/">Lihat detail</a>
+        </article>
+        <article class="card">
+          <h3>Aplikasi kanti sekolah</h3>
+          <p>memudahkan planggan untuk memesan makanan & minum di kantin secara online.</p>
+          <a href="https://inventarisrpl.my.canva.site/kantin-digital-smkn-2-peusangan">Lihat detail</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Kontak</h2>
+      <p>Kirim pesan singkat. Form ini hanya dicek di browser, tanpa backend.</p>
+      <form id="contact-form" novalidate>
+        <label for="nama">Nama</label>
+        <input id="nama" name="nama" type="text" autocomplete="name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+        <button type="submit">Kirim pesan</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Ilham Rizki . Portofolio XII RPL</p>
+  </footer>
+</body>
+</html>
